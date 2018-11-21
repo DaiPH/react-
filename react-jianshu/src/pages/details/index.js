@@ -4,7 +4,6 @@ import { actionCreators } from './store'
 import { DetailWrapper, Header, Content } from './style';
 
 class Detail extends PureComponent {
-
 	render() {
 		console.log(this.props.match.params.id)
 		return (

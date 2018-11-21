@@ -23,8 +23,10 @@ export default (state=defaultState,action)=>{
 				recommendList:action.recommendList,
 				bannerPic:action.bannerPic
 			});
+
 		case actionTypes.TOGGLE_SCROLL_TOP:
 			return state.set('scrollTop',action.show)
+
 		case actionTypes.GET_MORE_DATA:
 			return state.set('articleList',state.get('articleList').concat(action.data))
 
